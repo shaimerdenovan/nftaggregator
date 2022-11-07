@@ -1,0 +1,27 @@
+
+{% extends 'layout.html' %}
+  
+{% block title %}Profile{% endblock %}
+  
+{% block content %}
+<body style="background-color:#10283c;">
+<h1 style="color:aliceblue;">Profile Page</h1>
+<div>
+    <p style="font-family: Courier, monospace; color:aliceblue;">Your account details are below:</p>
+    <table style="font-family: Courier, monospace; color:aliceblue;">
+        <tr>
+            <td>Name:</td>
+            <td>{{ account['fullname'] }}</td>
+        </tr>
+  <tr>
+            <td>Username:</td>
+            <td>{{ account['username'] }}</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>{{ account['email'] }}</td>
+        </tr>
+    </table>
+</div>
+</body>
+{% endblock %}
